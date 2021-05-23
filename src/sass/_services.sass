@@ -1,0 +1,75 @@
+.services
+    background: url("../img/services_image.png") no-repeat
+    background-position: center right
+    background-size: contain
+    padding: 90px 0
+    position: relative
+    max-width: 1536px
+    margin: auto
+
+    &::before
+        content: ''
+        width: 50%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #fff
+    
+    &-block
+        display: flex
+        justify-content: space-between
+        position: relative
+    
+    &-title
+        font-size: 24px
+        font-weight: 700
+        color: $text-color
+
+    &-image
+        width: 959px
+        height: 595px
+
+    &-text 
+        width: 50%
+        padding-right: 90px
+
+    &-subtitle
+        font-size: 16px
+        font-weight: 300
+        margin-top: 20px
+        margin-bottom: 30px
+
+    &-data
+        display: flex
+        justify-content: space-between
+
+.input
+    padding: 25px 
+    width: 240px
+    height: 65px
+    border: 1px solid $input-color
+    border-radius: 10px
+
+.input_data
+    margin-right: 10px
+
+.btn
+    width: 495px
+    height: 70px
+    background-color: $btn-color
+    border-radius: 10px
+    border: none
+    margin: 30px 0
+    cursor: pointer
+
+.contact
+    font-size: 15px
+    font-weight: 700
+    color: $text-color
+
+.inf
+    font-size: 15px
+    font-weight: 300
+    color: $text-color
+    margin: 0
