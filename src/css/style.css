@@ -410,4 +410,40 @@ p {
 .link {
   width: 100px;
 }
+
+.steps-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+}
+
+.steps-subtitle {
+  font-size: 20px;
+  font-weight: 100;
+  color: #000000;
+  text-align: center;
+  margin: 55px 0;
+}
+
+.steps-block-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-img {
+  margin-bottom: 60px;
+}
+
+.steps-block-img {
+  text-align: center;
+}
+
+.steps-text {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
