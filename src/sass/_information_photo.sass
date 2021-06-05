@@ -1,0 +1,49 @@
+.inf_photo_grid
+    display: grid
+    grid-template-columns: repeat(auto-fit, 370px)
+    grid-gap: 28px
+    margin-bottom: 90px
+
+.inf_photo_block
+    position: relative
+
+.inf_photo
+    width: 370px
+    height: 410px
+    
+    &_text
+        position: absolute
+        left: 0
+        text-align: left
+        padding-top: 25px
+        padding-left: 25px
+        font-size: 16px
+        line-height: 23px
+        font-weight: 300
+        color: #000000
+
+.strong-text
+    font-size: 16px
+    line-height: 23px
+    font-weight: 500
+    color: #000000
+
+@media (max-width: 768px)
+    .inf_photo_grid
+        margin-bottom: 50px
+        display: grid
+        justify-items: center
+        align-items: center
+        grid-template-columns: none
+
+    .inf_photo
+        width: 272px
+        height: 300px
+
+        &_text
+            font-size: 12px
+            line-height: 17px
+            padding: 20px 15px
+
+    .strong-text
+        font-size: 12px
