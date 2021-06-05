@@ -1,5 +1,4 @@
 .title
-    font-family: 'Museo Sans Cyrl'
     font-size: 41px
     font-weight: 700
     margin-top: 0
@@ -22,14 +21,23 @@
         &-item  
             display: flex
             align-items: center
-           
+            position: relative
+            
         &__text
            margin-bottom: 15px
-           margin-left: 30px
+           position: absolute
+           padding-left: 70px
+           font-size: 14px
+           line-height: 24px
+           font-weight: 300
+           color: #333333
 
         &__img
-            width: 20px
-            height: 20px
+            border: 3px solid
+            border-color: $border-color
+            border-radius: 50px
+            margin-bottom: 20px
+            padding: 8px
         
     &-image
         width: 570px
@@ -48,4 +56,27 @@
 .text
     display: flex
     flex-direction: column
+
+@media (max-width: 768px)
+    .main-image
+        width: 270px
+        height: 231px
+
+    .title
+        font-size: 24px
+        line-height: 1.2
+        font-weight: 700
+        color: #333333
+
+    .subtitle
+        font-size: 16px
+        line-height: 1.2
+        font-weight: 700
+        color: #333333
+
+    .main-text
+        width: 100%
+
+    .main-inf-item
+        margin-bottom: 20px  
 
