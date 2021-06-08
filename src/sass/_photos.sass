@@ -10,12 +10,13 @@
         text-align: center
         margin-bottom: 100px
 
-.slider 
+.slider
+    display: grid
+    grid-template-columns: repeat(auto-fit, 370px)
+    grid-gap: 28px
+
     &__img
         margin: auto
-
-p
-    margin: 0
 
 .arrows
     &__left, &__right
@@ -29,7 +30,7 @@ p
     display: flex
     justify-content: space-between
 
-.arrow__left
+.arrows__left
     width: 45px
     height: 19px
 
