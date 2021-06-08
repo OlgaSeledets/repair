@@ -1,5 +1,5 @@
 .steps
-    &-title
+    &__title
         font-size: 30px
         font-weight: 700
         color: $text-color
@@ -7,7 +7,7 @@
         text-align: center
         padding: 0 248px
 
-    &-subtitle
+    &__subtitle
         font-size: 20px
         font-weight: 100
         color: $subtitle-color
@@ -19,7 +19,7 @@
         justify-content: space-between
         margin-bottom: 90px
 
-    &-img
+    &__img
         margin-bottom: 30px
         border: 3px solid
         border-color: $border-color
@@ -29,26 +29,30 @@
     &-block-img
         text-align: center
 
-    &-text
+    &__text
         text-align: center
         font-size: 14px
         line-height: 20px
         font-weight: 300
         color: #000000
 
+@media (max-width: 1200px)
+    .steps
+        &__title
+            padding: 0 20px
+
 @media (max-width: 768px)
     .steps
-
-        &-title
+        &__title
             font-size: 18px
             line-height: 1.2
             padding: 0 20px
 
-        &-subtitle
+        &__subtitle
             font-size: 14px
             margin: 30px 0
 
-        &_arrow
+        &__arrow
             display: none
 
         &-block-flex

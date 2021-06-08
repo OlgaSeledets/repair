@@ -1,46 +1,61 @@
-.guarantee-title
-    font-size: 30px
-    line-height: 45px
-    font-weight: 700
-    color: $title-color
-    text-align: center
-    padding: 0 241px
+.guarantee
+    &__title
+        font-size: 30px
+        line-height: 45px
+        font-weight: 700
+        color: $title-color
+        text-align: center
+        padding: 0 241px
 
-.guarantee_grid
-    display: grid
-    grid-template-columns: repeat(auto-fit, 370px)
-    grid-gap: 28px
-    margin-top: 90px
-    margin-bottom: 230px
+    &-grid
+        display: grid
+        grid-template-columns: repeat(auto-fit, 370px)
+        grid-gap: 28px
+        margin-top: 90px
+        margin-bottom: 230px
 
-.guarantee_text
-    font-size: 18px
-    line-height: 24px
-    font-weight: 300
-    color: #000000
-    text-align: center
-    margin-top: 40px
+    &__text
+        font-size: 18px
+        line-height: 24px
+        font-weight: 300
+        color: #000000
+        text-align: center
+        margin-top: 40px
 
-.guarantee_block
-    text-align: center
+    &-block
+        text-align: center
 
-.guarantee_photo
-    width: 270px
-    height: 360px
+    &__photo
+        width: 270px
+        height: 360px
+
+@media (max-width: 1200px)
+    .guarantee
+        &-grid
+            display: grid
+            grid-template-columns: none
+            margin-bottom: 90px
+            margin-top: 50px
+
+        &__title
+            padding: 0 20px
 
 @media (max-width: 768px)
-    .guarantee_grid
-        display: grid
-        grid-template-columns: none
+    .guarantee
+        &-grid
+            display: grid
+            grid-template-columns: none
+            margin-bottom: 90px
+            margin-top: 50px
 
-    .guarantee-title
-        font-size: 18px
-        line-height: 1.2
-        padding: 0 20px
+        &__title
+            font-size: 18px
+            line-height: 1.2
+            padding: 0 20px
 
-    .guarantee_text
-        font-size: 14px
-        line-height: 20px
+        &__text
+            font-size: 14px
+            line-height: 20px
 
     
 

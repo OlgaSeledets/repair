@@ -1,15 +1,15 @@
-.inf_photo_grid
+.inf-photo
     display: grid
     grid-template-columns: repeat(auto-fit, 370px)
     grid-gap: 28px
     margin-bottom: 90px
 
-.inf_photo_block
-    position: relative
+    &-block
+        position: relative
 
-.inf_photo
-    width: 370px
-    height: 410px
+    &-img
+        width: 370px
+        height: 410px
     
     &_text
         position: absolute
@@ -28,17 +28,25 @@
     font-weight: 500
     color: #000000
 
-@media (max-width: 768px)
-    .inf_photo_grid
-        margin-bottom: 50px
+@media (max-width: 1200px)
+    .inf-photo
+        margin-bottom: 80px
         display: grid
         justify-items: center
         align-items: center
         grid-template-columns: none
 
-    .inf_photo
-        width: 272px
-        height: 300px
+@media (max-width: 768px)
+    .inf-photo
+        margin-bottom: 80px
+        display: grid
+        justify-items: center
+        align-items: center
+        grid-template-columns: none
+
+        &_img
+            width: 272px
+            height: 300px
 
         &_text
             font-size: 12px

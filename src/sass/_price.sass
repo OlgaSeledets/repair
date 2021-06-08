@@ -1,7 +1,7 @@
 .price
     padding: 90px 0
 
-    &-title
+    &__title
         font-size: 30px
         font-weight: 700
         color: $text-color
@@ -9,7 +9,7 @@
         line-height: 1.2
         padding: 0 313px
 
-    &-subtitle
+    &__subtitle
         font-size: 20px
         font-weight: 100
         color: $subtitle-color
@@ -22,24 +22,27 @@
         grid-template-columns: repeat(auto-fit, 370px)
         grid-gap: 28px
 
-    &-link 
+    &__link-item
         text-decoration: none
         font-size: 16px
         font-weight: 700
         color: $link-color
-        transition: color .2s linear
         position: relative
 
-    &-link:after 
-        content: ""
-        width: 100%
-        height: 3px
-        display: block
-        background-color: #ffd200
-        position: absolute
+        &:after 
+            content: ""
+            width: 100%
+            height: 3px
+            display: block
+            background-color: #ffd200
+            position: absolute
+            bottom: -4px
+            left: 0
+            z-index: -1
+            transition: 0.2s 
 
-    &-link:hover:after
-        height: 6px
+        &:hover:after
+            height: 12px
 
     &-grid
         width: 370px
@@ -47,14 +50,27 @@
         
     &-block
         border: 1px solid #f0f0f0
+        transition: 0.2s
+        &:hover
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+            .price-block-img:before
+                opacity: 1
 
         &-img
-            transition: .3s
             width: 370px
             height: 260px
+            position: relative
 
-            &:hover
-                background-image: linear-gradient(to top,#ffd200 0%, #f0f0f0 100%)
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                height: 100%
+                background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+                opacity: 0
+                transition: 0.2s
 
         &-bottom
             padding: 38px 55px
@@ -62,32 +78,25 @@
             flex-flow: column
             align-items: center
 
-    &-text
+    &__text
         margin-bottom: 30px
         font-size: 18px
         font-weight: 300
         color: #000000
 
-.link
-    width: 100px
+    &__link
+        width: 100px
 
-@media (max-width: 768px)
+@media (max-width: 1200px)
     .price
-
-        &-title
-            font-size: 18px
+        &__title
             padding: 0 20px
-
-        &-subtitle
-            font-size: 14px
-            margin-bottom: 60px
-            margin-top: 25px
-
+        
         &-grid
             width: 271px
             height: 191px
 
-        &-text
+        &__text
             font-size: 14px
             margin-bottom: 10px
         
@@ -105,9 +114,47 @@
             &-grid 
                 display: grid
                 grid-template-columns: none
-                grid-gap: 28px     
+                justify-items: center
+                align-items: center   
                   
-        &-link
+        &__link
+            font-size: 16px
+            
+@media (max-width: 768px)
+    .price
+        &__title
+            font-size: 18px
+            padding: 0 20px
+
+        &__subtitle
+            font-size: 14px
+            margin-bottom: 60px
+            margin-top: 25px
+
+        &-grid
+            width: 271px
+            height: 191px
+
+        &__text
+            font-size: 14px
+            margin-bottom: 10px
+        
+        &-block
+            width: 271px
+            height: 300px
+
+            &-img
+                width: 271px
+                height: 191px
+
+            &-bottom
+                padding: 28px 37px
+
+            &-grid 
+                display: grid
+                grid-template-columns: none   
+                  
+        &__link
             font-size: 16px
 
 

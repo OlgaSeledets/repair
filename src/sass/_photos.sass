@@ -8,55 +8,34 @@
         font-weight: 700
         color: $text-color
         text-align: center
+        margin-bottom: 100px
 
-.photos-block-grid 
-    display: grid
-    grid-template-columns: repeat(auto-fit, 370px)
-    grid-gap: 28px
-    margin-top: 98px
-
-
-.photos-grid 
-    width: 370px
-    height: 280px
+.slider 
+    &__img
+        margin: auto
 
 p
     margin: 0
 
 .arrows
-    text-align: center
-    margin-top: 65px
+    &__left, &__right
+        &:hover
+            cursor: pointer
 
-.arrow
+.photos__arrows
+    max-width: 120px
+    margin: auto
+    margin-top: 68px
+    display: flex
+    justify-content: space-between
+
+.arrow__left
     width: 45px
     height: 19px
 
-.arrow-right
+.arrows__right
     transform: rotate(180deg)
     margin-left: 10px
-
-@media ( max-width: 768px )
-    .photos
-        background: #f5f5f5
-        background-size: 100%
-        padding: 50px 0
-
-        &-title
-            font-size: 18px
-            line-height: 1.2
-            font-weight: 700
-            color: #333333
-
-        &-grid
-            width: 246px
-            height: 186px
-
-        &-block-grid 
-            margin-top: 40px
-            display: inline-block
-            text-align: center
-
-    .arrows
-        text-align: center
-        margin-top: 50px
+    width: 45px
+    height: 19px
     
