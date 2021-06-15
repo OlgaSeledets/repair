@@ -1,17 +1,18 @@
-.inf-photo
-    display: grid
-    grid-template-columns: repeat(auto-fit, 370px)
-    grid-gap: 28px
-    margin-bottom: 90px
+.information_photo
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(auto-fit, 370px)
+        grid-gap: 28px
+        margin-bottom: 90px
 
     &-block
         position: relative
 
-    &-img
+    &__img
         width: 370px
         height: 410px
     
-    &_text
+    &__text
         position: absolute
         left: 0
         text-align: left
@@ -22,36 +23,38 @@
         font-weight: 300
         color: #000000
 
-.strong-text
+.bold
     font-size: 16px
     line-height: 23px
     font-weight: 500
     color: #000000
 
 @media (max-width: 1200px)
-    .inf-photo
-        margin-bottom: 80px
-        display: grid
-        justify-items: center
-        align-items: center
-        grid-template-columns: none
+    .information_photo
+        &__wrapper
+            margin-bottom: 80px
+            display: grid
+            justify-items: center
+            align-items: center
+            grid-template-columns: none
 
 @media (max-width: 768px)
-    .inf-photo
-        margin-bottom: 80px
-        display: grid
-        justify-items: center
-        align-items: center
-        grid-template-columns: none
+    .information_photo
+        &__wrapper
+            margin-bottom: 80px
+            display: grid
+            justify-items: center
+            align-items: center
+            grid-template-columns: none
 
-        &_img
+        &__img
             width: 272px
             height: 300px
 
-        &_text
+        &__text
             font-size: 12px
             line-height: 17px
             padding: 20px 15px
 
-    .strong-text
+    .bold
         font-size: 12px

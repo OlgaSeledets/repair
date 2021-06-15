@@ -17,7 +17,7 @@
         line-height: 45px
         margin: 55px 0
 
-    &-block-grid 
+    &__wrapper 
         display: grid
         grid-template-columns: repeat(auto-fit, 370px)
         grid-gap: 28px
@@ -44,7 +44,7 @@
         &:hover:after
             height: 12px
 
-    &-grid
+    &__img
         width: 370px
         height: 260px
         
@@ -53,10 +53,10 @@
         transition: 0.2s
         &:hover
             box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
-            .price-block-img:before
+            .price-block__img:before
                 opacity: 1
 
-        &-img
+        &__img
             width: 370px
             height: 260px
             position: relative
@@ -72,7 +72,7 @@
                 opacity: 0
                 transition: 0.2s
 
-        &-bottom
+        &__bottom
             padding: 38px 55px
             display: flex
             flex-flow: column
@@ -92,7 +92,7 @@
         &__title
             padding: 0 20px
         
-        &-grid
+        &__img
             width: 271px
             height: 191px
 
@@ -104,18 +104,17 @@
             width: 271px
             height: 300px
 
-            &-img
+            &__img
                 width: 271px
                 height: 191px
 
-            &-bottom
+            &__bottom
                 padding: 28px 37px
 
-            &-grid 
-                display: grid
-                grid-template-columns: none
-                justify-items: center
-                align-items: center   
+        &__wrapper
+            grid-template-columns: none
+            justify-items: center
+            align-items: center   
                   
         &__link
             font-size: 16px
@@ -131,7 +130,7 @@
             margin-bottom: 60px
             margin-top: 25px
 
-        &-grid
+        &__img
             width: 271px
             height: 191px
 
@@ -143,16 +142,17 @@
             width: 271px
             height: 300px
 
-            &-img
+            &__img
                 width: 271px
                 height: 191px
 
-            &-bottom
+            &__bottom
                 padding: 28px 37px
 
-            &-grid 
-                display: grid
-                grid-template-columns: none   
+        &__wrapper
+            grid-template-columns: none 
+            justify-items: center
+            align-items: center 
                   
         &__link
             font-size: 16px

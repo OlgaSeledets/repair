@@ -13,6 +13,22 @@ img
     width: 100%
     margin: auto
 
+.button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 18px 30px
+    cursor: pointer
+    transition: background .2s 
+    &:hover
+        background-color: #fbc02d
+
+.input
+    border: 1px solid $input-color
+    border-radius: 10px
+    outline: 0
+    padding: 25px 
+
 @media ( max-width: 1200px)
     .container
         width: 760px
@@ -32,10 +48,4 @@ img
     .section
         padding-top: 60px
         padding-bottom: 60px
-
-.button
-    border-radius: 10px
-    background-color: $main-color
-    border: none
-    padding: 18px 30px
     

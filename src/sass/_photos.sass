@@ -3,7 +3,7 @@
     background-size: 50%
     padding: 90px 0
 
-    &-title
+    &__title
         font-size: 30px
         font-weight: 700
         color: $text-color
@@ -11,9 +11,8 @@
         margin-bottom: 100px
 
 .slider
-    display: grid
-    grid-template-columns: repeat(auto-fit, 370px)
-    grid-gap: 28px
+    &__item
+        margin: 15px
 
     &__img
         margin: auto
@@ -39,4 +38,36 @@
     margin-left: 10px
     width: 45px
     height: 19px
+
+@media ( max-width: 1200px)
+    .photos
+        padding-top: 45px
+        padding-bottom: 60px
+
+        &__title
+            font-size: 18px
+            margin-bottom: 0
+
+        &__arrows
+            margin-top: 0
+
+    .slider
+        &__img
+            padding: 50px 0
+
+@media ( max-width: 768px)
+    .photos
+        padding-top: 45px
+        padding-bottom: 60px
+
+        &__title
+            font-size: 18px
+            margin-bottom: 0
+
+        &__arrows
+            margin-top: 0
+
+    .slider
+        &__img
+            padding: 50px 0
     
