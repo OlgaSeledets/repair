@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    var button = $('#button');
-    var modal = $('#modal');
-    var close = $('#close');
+    const button = $('#button');
+    const modal = $('#modal');
+    const close = $('#close');
 
     button.on('click', function() {
         modal.addClass('modal_active');

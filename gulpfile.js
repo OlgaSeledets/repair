@@ -1,13 +1,11 @@
-var gulp = require('gulp');
-var cleanCSS = require('gulp-clean-css');
-var htmlmin = require('gulp-htmlmin');
-var tinyPNG = require('gulp-tinypng-compress')
+const gulp = require('gulp');
+const cleanCSS = require('gulp-clean-css');
+const htmlmin = require('gulp-htmlmin');
+const tinyPNG = require('gulp-tinypng-compress')
 
 gulp.task('default' , defaultTask);
 
-function defaultTask(done){
-    done();
-}
+defaultTask => { done }
 
 gulp.task('minify-css' , function(done) {
     return gulp.src('./src/css/*.css')

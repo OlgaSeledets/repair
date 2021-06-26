@@ -65,13 +65,13 @@
             <div class="services__wrapper wow animate__animated animate__bounce animate__fadeInLeft">
                 <div class="services__text">
                     <h2 class="services__title">
-                        Мы бесплатно разработаем<br> дизайн-проект Вашего жилья<br> и реализуем его!
+                        Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
                     </h2>
                     <p class="services__subtitle">
-                        Оставьте заявку на разработку<br> бесплатного дизайн-проекта!
+                        Оставьте заявку на разработку бесплатного дизайн-проекта!
                     </p>
-                    <input class="input services__input services__input-data" type="text" placeholder="Ваше имя">
-                    <input class="input services__input" type="text" placeholder="Ваш телефон">
+                    <input class="input services__input services__input-data" type="text"  pattern="[А-Яа-яЁё]" placeholder="Ваше имя">
+                    <input class="input services__input" type="tel" pattern="2-[0-9]{3}-[0-9]{3}" placeholder="Ваш телефон">
                     <button class="button services__button">Получить бесплатный дизайн-проект</button>
                     <div class="services-data">
                         <p class="services__info">Наш менеджер перезвонит Вам<br> в течение 60 секунд</p>
@@ -311,8 +311,8 @@
                     <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
                     <span class="form__subtitle">Для этого заполните форму ниже</span>
                     <form action="#">
-                        <input type="text" class="input brif__input" placeholder="Ваше имя">
-                        <input type="text" class="input brif__input" placeholder="Ваш телефон">
+                        <input type="text" class="input brif__input" pattern="[А-Яа-яЁё]" placeholder="Ваше имя">
+                        <input type="tel" class="input brif__input" pattern="2-[0-9]{3}-[0-9]{3}" placeholder="Ваш телефон">
                         <button class="button brif__button">Узнать стоимость</button>
                         <p class="form__description">Мы перезвоним Вам в течение 60 секунд</p>
                     </form>
